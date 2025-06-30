@@ -22,9 +22,10 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> If `requirements.txt` is missing, install manually:
+> If `requirements.txt` is failing, install manually (listing some of them below)
+also be careful for the version of flower and tensorflow are in sync:
 ```bash
-pip install flask pandas numpy scikit-learn matplotlib tensorflow
+pip install flask pandas numpy scikit-learn matplotlib tensorflow ray
 ```
 
 ---
