@@ -1,0 +1,15 @@
+fl_config:
+  task_type: "tabular"
+  dataset_path_1: "/home/FLCMed-TAD/dataset/station_data_dataverse.csv"  # Adjust the path
+  num_clients: 9
+  server_address: "localhost:8080"
+  training:
+    batch_size: 32
+    epochs: 3
+    lr: 0.001
+  model:
+    num_classes: 1
+
+server_config:
+  num_rounds: 200
+  min_available_clients: 9
