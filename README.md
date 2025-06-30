@@ -77,6 +77,7 @@ python main.py
 ##  Dataset
 
 - Dataset: `station_data_dataverse.csv`
+- Source: `https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NFPQLW`
 - Total Columns: **14**
 - **7 features** used for training, selected based on correlation analysis
 
