@@ -84,6 +84,11 @@ python main.py
 
 ---
 
+##  Configuration
+- The primary configuration is located at: conf/base.yaml
+- num_clients, num_rounds, dataset_path_1 parameters can be configured directly from here.
+
+---
 ##  Optional Live Prediction via Flask Client
 
 ### 1. Start Flask Client
