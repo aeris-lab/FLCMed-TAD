@@ -10,8 +10,8 @@ This repository implements a **Federated Learning** pipeline to detect anomalies
 ### 1. Clone and Setup Virtual Environment
 
 ```bash
-git clone https://github.com/your-username/federated_learning_updated_model_EV.git
-cd federated_learning_updated_model_EV
+git clone https://github.com/aeris-lab/FLCMed-TAD.git
+cd FLCMed-TAD
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -35,7 +35,7 @@ Search for the keyword `# Adjust the path` throughout the codebase and **update 
 
 ---
 
-## 易 Federated Learning Flow
+##  Federated Learning Flow
 
 ### Sequence of Execution:
 
