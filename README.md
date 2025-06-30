@@ -100,7 +100,7 @@ curl -X POST http://localhost:5000/predict \
 
 ---
 
-## 什 Cleaning Up
+##  Cleaning Up
 
 Always terminate Flask and Fog Node servers properly after execution:
 
@@ -137,7 +137,7 @@ To simulate adversarial poisoning behavior:
     - Select the type of attack (e.g., weight poison, data poison)
 ---
 
-## 里 Configuration
+##  Configuration
 
 - **Python Version**: 3.9  
 - **OS**: Ubuntu 18.04  
