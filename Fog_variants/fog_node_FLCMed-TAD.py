@@ -68,9 +68,13 @@ def detect_outliers_layerwise(valid_clients, threshold=2.0):
             score = 0.9 * score
         temporal_scores[cid] = score
 
-        if avg_dist > dist_mean + threshold * dist_std or avg_cosine < 0.7 :
+        # The condition check factors mentioned below is subject to change (given as tested)
+        if (avg_dist > dist_mean + threshold * dist_std and temporal_scores[cid] > 1.5) or \
+       (avg_cosine < 0.7 and temporal_scores[cid] > 1.5):
             outliers.append(cid)
             print(f"[Outlier] Client {cid}: dist={avg_dist:.4f}, cosine={avg_cosine:.4f}, score={score:.2f}")
+        else:
+            print(f"[OK!] Client {cid}: dist={avg_dist:.4f}, cosine={avg_cosine:.4f}, score={score:.2f}")
     return outliers
 
 def unban_expired_clients():

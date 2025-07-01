@@ -113,7 +113,6 @@ def main():
         latency_logs = load_full_logs("latency_client_*.json")
         comm_logs = load_full_logs("comm_client_*.json")
         plot_combined(latency_logs, comm_logs)
-        combined_client_server_plot()
 
     finally:
         # Ensure fog node is shut down gracefully
